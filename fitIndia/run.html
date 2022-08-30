@@ -1,0 +1,501 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/homepage.css">
+    <title>
+        Running Leaderboard &middot; Games and Sports Council, IIT Kanpur
+    </title>
+
+    <link href="../favicon.png" rel="icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<section>
+    <!--for demo wrap-->
+    <h1>Games and Sports Council, IIT Kanpur</h1>
+    <h2>Cummulative Leaderboard for Fit India Freedom Walking/Running 2.0: Cycling</h2>
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Distance (km)</th>
+                    <th>Trips</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    <div class="tbl-content">
+
+
+        <table id="runTable" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <!-- Data to be updated soon -->
+                <tr>
+                    <th>1</th>
+                    <td>Arvind Kr Vartiya</td>
+                    <td>331.18</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Vijaianand S K</td>
+                    <td>251.99</td>
+                    <td>49</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Reshawn Vishwakarma</td>
+                    <td>221.52</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Jaswinder Singh</td>
+                    <td>189.19</td>
+                    <td>42</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>Mangesh Bhendale</td>
+                    <td>164.99</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>Harsh Jain</td>
+                    <td>157.78</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td>shekhar mondal</td>
+                    <td>146.47</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td>RC R</td>
+                    <td>129.61</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td>Khushi Gautam</td>
+                    <td>128.67</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <th>10</th>
+                    <td>Shiv Kumar Yadav</td>
+                    <td>126.42</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <th>11</th>
+                    <td>Sanket Garg</td>
+                    <td>122.39</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <th>12</th>
+                    <td>Rohit kumar Maurya</td>
+                    <td>105.25</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>13</th>
+                    <td>Utsav Singh</td>
+                    <td>81.74</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <th>14</th>
+                    <td>Ravi Kiran</td>
+                    <td>76.38</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <th>15</th>
+                    <td>Lavish Arora</td>
+                    <td>70.54</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>16</th>
+                    <td>Thanya Balasubramanian</td>
+                    <td>65.86</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>17</th>
+                    <td>Manish Tongaonkar</td>
+                    <td>58.98</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th>18</th>
+                    <td>Reetesh Pandagre</td>
+                    <td>58.68</td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <th>19</th>
+                    <td>Balasundaram Mohan</td>
+                    <td>57.58</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>20</th>
+                    <td>Madhusudhanan U</td>
+                    <td>56.78</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>21</th>
+                    <td>Ankit Tewatia</td>
+                    <td>51.31</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <th>22</th>
+                    <td>Sumit Tripathi</td>
+                    <td>49.28</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>23</th>
+                    <td>Biswajita Panda</td>
+                    <td>45.78</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <th>24</th>
+                    <td>Ritish Katiyar</td>
+                    <td>42.21</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <th>25</th>
+                    <td>Kundan Shahare</td>
+                    <td>41.82</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <th>26</th>
+                    <td>Archi Gupta</td>
+                    <td>40.52</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th>27</th>
+                    <td>Prajwal Rudrakshi</td>
+                    <td>37.83</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th>28</th>
+                    <td>Safa Musthafa</td>
+                    <td>35.23</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>29</th>
+                    <td>Sandeep Yadav</td>
+                    <td>35.04</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>30</th>
+                    <td>Ishank Agarwal</td>
+                    <td>34.91</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>31</th>
+                    <td>Milan Anand Raj</td>
+                    <td>34.66</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>32</th>
+                    <td>Krushna Pavan Musale</td>
+                    <td>25.49</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <th>33</th>
+                    <td>Akshay A Kumar</td>
+                    <td>24.82</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>34</th>
+                    <td>Harsh Ranjan</td>
+                    <td>17.84</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>35</th>
+                    <td>Shambhavi Dube</td>
+                    <td>17.71</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>36</th>
+                    <td>Harmanjot Singh</td>
+                    <td>17.23</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>37</th>
+                    <td>Amrendra kumar</td>
+                    <td>16.14</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>38</th>
+                    <td>DEVANSHU GUPTA</td>
+                    <td>13.73</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>39</th>
+                    <td>Dhananjoy De</td>
+                    <td>13.36</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>40</th>
+                    <td>Shiven P</td>
+                    <td>13.19</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>41</th>
+                    <td>Gurvinder Singh. Athlete</td>
+                    <td>12.76</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>42</th>
+                    <td>RANGESH P</td>
+                    <td>12.64</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <th>43</th>
+                    <td>Dhruvam Pandey</td>
+                    <td>10.78</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>44</th>
+                    <td>Bhaskar Lamba</td>
+                    <td>10.73</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>45</th>
+                    <td>Garvit Arora</td>
+                    <td>9.48</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>46</th>
+                    <td>Mohit Mudgal</td>
+                    <td>9.32</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <th>47</th>
+                    <td>Ankit Bhimwal</td>
+                    <td>8.72</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>48</th>
+                    <td>Kanhaiya Lal Chaurasiya</td>
+                    <td>7.95</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>49</th>
+                    <td>Mohit Patle</td>
+                    <td>7.23</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>50</th>
+                    <td>Anshika Chaudhary</td>
+                    <td>7.12</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>51</th>
+                    <td>Ankul Kumar</td>
+                    <td>6.82</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th>52</th>
+                    <td>Reuben Mendonsa</td>
+                    <td>5.41</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>53</th>
+                    <td>Ajay Chandra</td>
+                    <td>5.23</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>54</th>
+                    <td>Kunal Ghanghav</td>
+                    <td>4.70</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>55</th>
+                    <td>Dhiraj Chandawar</td>
+                    <td>4.48</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>56</th>
+                    <td>Gurwinder Kaur</td>
+                    <td>3.44</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>57</th>
+                    <td>RAHUL VERMA</td>
+                    <td>3.18</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>58</th>
+                    <td>Samanvay Lakhotia</td>
+                    <td>2.70</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>59</th>
+                    <td>Kp ...😎</td>
+                    <td>2.61</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>60</th>
+                    <td>NITESH SHARMA</td>
+                    <td>2.51</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>61</th>
+                    <td>Keshav Maheshwari</td>
+                    <td>2.17</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>62</th>
+                    <td>Neeladri Reddy</td>
+                    <td>2.12</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th>63</th>
+                    <td>Pushkar Chaudhary</td>
+                    <td>1.70</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>64</th>
+                    <td>Devanshika Dubey 10A 35</td>
+                    <td>1.25</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>65</th>
+                    <td>Maurya Manoj</td>
+                    <td>NaN</td>
+                    <td>8</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+<!-- follow me template -->
+
+<!-- 
+<div1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<a href="https://github.com/Sahilsingh0808" target="blank" class="fa fa-github"></a>
+<a href="https://www.linkedin.com/in/sahil-singh-618bb31ba/" target="blank" class="fa fa-linkedin"></a>
+<a href="https://play.google.com/store/apps/dev?id=6827640478599058378&hl=en_IN&gl=US" target="blank"
+    class="fa fa-google"></a>
+<a href="https://sahilsingh08062001.medium.com/" target="blank" class="fa fa-medium"></a>
+<a href="https://www.instagram.com/sahil.void/" target="blank" class="fa fa-instagram"></a>
+<a href="https://www.facebook.com/profile.php?id=100055710708389" target="blank" class="fa fa-facebook"></a>
+<a href="https://twitter.com/SahilSi92947385" target="blank" class="fa fa-twitter"></a>
+<a href="mailto:sahilsingh08062001@gmail.com" target="blank" class="fa fa-envelope"></a>
+</div1> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div>
+    <br>
+    <a>Follow Games and Sports Council, IIT Kanpur<br><br></a>
+    <a href="https://www.instagram.com/iitksports/ " target="_blank" class="fa fa-instagram"><span></span></a>
+    <a href="https://www.facebook.com/iitksports" target="_blank" class="fa fa-facebook"><i
+            class="icon-facebook"></i><span></span></a>
+    <a href="https://www.linkedin.com/company/games-and-sports-council-iit-kanpur/mycompany/" target="_blank"
+        class="fa fa-linkedin"><i class="icon-google-plus"></i><span></span></a>
+    <a href="https://www.youtube.com/channel/UC_DYfHIfAlTH3ECXXCGo_9g" target="_blank" class="fa fa-youtube"><i
+            class="icon-google-plus"></i><span></span></a>
+</div>
+
+<div class="made-with-love">
+    Updated as per data until 4th October 2021 00:01 hours IST
+</div>
+
+<div>
+    Built by
+    <a href="https://www.linkedin.com/in/sahil-singh-618bb31ba/" target="_blank">
+        <strong style="color: rgb(0, 3, 151);">Sahil</strong>
+    </a> &#x2c;
+    <a href="https://www.linkedin.com/in/dilip-kumar-dilip/" target="_blank">
+        <strong style="color: rgb(0, 3, 151);">Dilip</strong>
+    </a> &#x2c;
+    <a href="https://www.linkedin.com/in/sweta-kumari-780b751a6/" target="_blank">
+        <strong style="color: rgb(0, 3, 151);">Sweta</strong>
+    </a>
+</div>
+
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("runTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+
+</html>
