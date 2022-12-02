@@ -31,6 +31,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
+    section{
+}
+      /* background-image: url("images/backgrounds/background image.png") */
+  }
     .contact_dropdownMenu:hover {
       color: rgb(238, 5, 102);
       font-weight: 800;
@@ -48,7 +52,7 @@
 
 
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white nav-shadow nochange">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark nav-shadow nochange">
 
     <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" height="40px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -133,11 +137,11 @@
     </div>
   </nav>
 
-
+  
   <section id="pricing" class="py-5">
-    <!-- style="background-image: linear-gradient(to right,rgba(20, 44, 184, 0.705),rgba(24, 24, 179, 0.644));" -->
+    
     <div class="container text-center">
-      <h2 class=" h2 " style=" font-family: 'PT Serif', serif; color:rgb(111, 68, 112);">Our Team</h2>
+      <h2 class=" h2 " style=" font-family: 'PT Serif', serif; color: #fff;">Our Team</h2>
       <p class="text-muted pb-5"></p>
 
 
@@ -1199,31 +1203,34 @@
     .teamAvatar {
       border: solid 6px #fff;
       transition: all 0.3s ease;
-      border-radius: 100px;
+      border-radius: 25px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-      height: 120px;
+      height: 10rem;
       width: auto;
     }
 
     .teamAvatar:hover {
-      transform: scale(1.06);
+      transform: scale(1.2);
     }
 
     .team {
       margin-bottom: 40px;
     }
-
+    .pricing{
+      background-color: seashell;
+    }
     .pricing:hover {
-      background-color: #6d6357;
+      background-color: silver;
       color: white;
     }
-
+    .team_member_name{
+      font-size: large;
+    }
     .pricing:hover .team_member_name {
       color: white;
     }
-
     .pricing:hover a,
     i {
       color: white;

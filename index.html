@@ -314,7 +314,7 @@
 							<a href="contact/index.html">
 								<div class="zoom">
 									<p><i class="fa fa-heart " style="font-size:60px;"></i></p>
-							  		<h2 class="counter ">26</h2>
+							  		<h2 class="counter"><span id='0101'>37</span></h2>
 									<p class="text-uppercase">Core Team Members </p>
 								</div>
 							</a>
@@ -323,7 +323,7 @@
 							<a href="teams/index.html">
 								<div class="zoom">
 									<p><i class="fa fa-users" style="font-size:60px;"></i></p>
-									<h2 class="counter">12</h2>
+									<h2 class="counter"><span id='0102'>11</span></h2>
 									<p class="text-uppercase">Institute Teams</p>
 								</div>
 							</a>
@@ -332,7 +332,7 @@
 							<a href="clubs/index.html">
 								<div class="zoom">
 									<p><i class="fa fa-university"style="font-size:60px;"></i></p>
-									<h2 class="counter">11</h2>
+									<h2 class="counter"><span id='0103'>45</span></h2>
 									<p class="text-uppercase">Clubs & Societies</p>
 								</div>
 							</a>
@@ -341,7 +341,7 @@
 							<a href="index.html">
 								<div class="zoom">
 									<p><i class="fa fa-user" style="font-size:60px;"></i></p>
-									<h2 class="counter">400+</h2>
+									<h2 class="counter"><div id="counter4">+</h2>
 									<p class="text-uppercase">Sportsperson</p>
 								</div>
 							</a>
@@ -715,7 +715,7 @@ finesse and competition is a feast to the eyes.--> </p>
                         <a target="_blank" class="ml-3 btn-facebook" href="#"><i class="fab fa-facebook"></i></a>
                         <a target="_blank" class="ml-3 btn-linkedin" href="#"><i class="fab fa-linkedin"></i></a> 
                         
-                                               
+                    
                     </div>
                 </div>
                 <div class="col-xl-8" style="padding-top: 30px;">
@@ -1308,7 +1308,51 @@ finesse and competition is a feast to the eyes.--> </p>
     
       
       
-    
+<script>
+  function animate(obj, initVal, lastVal, duration) {
+
+    let startTime = null;
+
+    //get the current timestamp and assign it to the currentTime variable
+    let currentTime = Date.now();
+
+    //pass the current timestamp to the step function
+    const step = (currentTime ) => {
+
+        //if the start time is null, assign the current time to startTime
+        if (!startTime) {
+              startTime = currentTime ;
+        }
+
+        //calculate the value to be used in calculating the number to be displayed
+        const progress = Math.min((currentTime  - startTime) / duration, 1);
+
+        //calculate what to be displayed using the value gotten above
+        obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+        //checking to make sure the counter does not exceed the last value (lastVal)
+        if (progress < 1) {
+              window.requestAnimationFrame(step);
+        }
+        else{
+              window.cancelAnimationFrame(window.requestAnimationFrame(step));
+        }
+    };
+
+    //start animating
+    window.requestAnimationFrame(step);
+}
+
+let text1 = document.getElementById('0101');
+let text2 = document.getElementById('0102');
+let text3 = document.getElementById('0103');
+
+const load = () => {
+    animate(text1, 0, 37, 5000);
+    animate(text2, 0, 12, 5000);
+    animate(text3, 100, 11, 5000);
+}
+</script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -1392,5 +1436,7 @@ $(document).ready(function() {
 });
 	
 	</script>
+  
+
   </body>
 </html>
