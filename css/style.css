@@ -80,7 +80,41 @@ body {
 }
 
 
-
+  .lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 
 [tabindex="-1"]:focus {
@@ -471,7 +505,10 @@ hr {
   border: 4px solid rgb(0, 0, 0);
   padding: 6px;
 }
-
+.top-image{
+    height: 100%;
+    width: 100%;
+}
 small,
 .small {
     font-size: 80%;
@@ -533,6 +570,76 @@ mark,
     height: auto
 }
 
+
+
+
+.main-heading {
+    opacity: 1;
+    position: absolute;
+    width: 50%;
+    font-size: 3rem;
+    z-index: 100;
+    top: 2em;
+    left: 2em;
+    color: #FFFFFF;
+  }
+  /* BG SLIDESHOW CSS */
+  .slideshow,
+  .slideshow::after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0px;
+  }
+  .slideshow::after {
+    content: '';
+    background: linear-gradient(-70deg, rgba(0,0,0,0), rgba(0,0,0,1));
+  }
+  .img-bg-slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent; /*hides span's text*/
+    background-size: cover; /* covers whole viewport */
+    background-position: 100% 100%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: backgroundSlideshow 60s linear infinite 0s;
+  }
+  .slideshow li:nth-child(1) .img-bg-slide {
+     background-image: url('https://i.imgur.com/8TrVYTS.jpg');
+  }
+  .slideshow li:nth-child(2) .img-bg-slide { 
+      background-image: url('https://i.imgur.com/DDa43Fn.jpg');
+      animation-delay: 15s; 
+  }
+  .slideshow li:nth-child(3) .img-bg-slide { 
+      background-image: url('https://i.imgur.com/KxOhxyk.jpg');
+      animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(4) .img-bg-slide { 
+      background-image: url('https://i.imgur.com/R0jp6Br.jpg');
+      animation-delay: 45s; 
+  }
+  @keyframes backgroundSlideshow {
+    0% { opacity: 0;}
+    12.5% { opacity: 1;}
+    25% { opacity: 1;}
+    37.5% { opacity: 0;}
+    100% { opacity: 0;} 
+  }
+  /* End of BG SLIDESHOW */
+  
+  
+  
+  
+  
+  Resources
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
